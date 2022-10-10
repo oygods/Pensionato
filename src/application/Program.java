@@ -1,5 +1,7 @@
 package application;
 
+import entities.Rent;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,7 +10,8 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-
+        Rent r = new Rent("Maria", "maria@gmail.com");
+        System.out.println(r);
 
         sc.close();
     }
